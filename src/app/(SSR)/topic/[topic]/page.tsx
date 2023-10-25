@@ -20,7 +20,7 @@ export function generateMetadata({ params: { topic }}: PageProps): Metadata {
 }
 
 export function generateStaticParams() {
-    return ["coding", "web development", "books", "fitness"].map(topic => ({ topic }));
+    return ["coding", "health", "books", "fitness"].map(topic => ({ topic }));
 }
 
 export default async function Page({ params: { topic } }: PageProps) {
